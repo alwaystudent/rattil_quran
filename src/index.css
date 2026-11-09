@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-quran: "Amiri Quran", "Amiri", serif;
+    --font-arabic: "Tajawal", "Noto Naskh Arabic", sans-serif;
+  }
+
+  body {
+    font-family: var(--font-arabic);
+    background-color: #FAF8F2;
+    color: #232B28;
+  }
+
+  .dark body {
+    background-color: #141715;
+    color: #E6E4DC;
+  }
+}
+
+.font-quran {
+  font-family: "Scheherazade New", "Amiri", "Amiri Quran", "Traditional Arabic", serif;
+  line-height: 2.8;
+  overflow: visible;
+}
+
+.font-arabic {
+  font-family: "Tajawal", "Noto Naskh Arabic", sans-serif;
+}
+
+/* Warm natural Quranic parchment border */
+.parchment-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E3D6;
+  box-shadow: 0 1px 3px rgba(35, 43, 40, 0.04);
+}
+
+.dark .parchment-card {
+  background-color: #1B1E1C;
+  border: 1px solid #2B312D;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Natural soft scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 135, 125, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 135, 125, 0.5);
+}

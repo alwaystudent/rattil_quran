@@ -1,0 +1,6 @@
+{
+  "name": "رتّل - منصة التحفيظ بالمحاذاة اللحظية والتكرار التراكمي",
+  "description": "منصة قرآنية متطورة لتحفيظ القرآن الكريم بتقنية المحاذاة اللحظية للصوت، الإخفاء التدريجي للكلمات، والربط التراكمي للآيات وفق صفحات مجمع الملك فهد.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
